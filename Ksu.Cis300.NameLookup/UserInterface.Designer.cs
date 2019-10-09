@@ -37,6 +37,7 @@
             this.uxName = new System.Windows.Forms.TextBox();
             this.uxNameLabel = new System.Windows.Forms.Label();
             this.uxOpenDialog = new System.Windows.Forms.OpenFileDialog();
+            this.uxRemoveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // uxOpen
@@ -95,7 +96,7 @@
             this.uxLookup.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxLookup.Location = new System.Drawing.Point(26, 106);
             this.uxLookup.Name = "uxLookup";
-            this.uxLookup.Size = new System.Drawing.Size(310, 41);
+            this.uxLookup.Size = new System.Drawing.Size(150, 41);
             this.uxLookup.TabIndex = 42;
             this.uxLookup.Text = "Get Statistics";
             this.uxLookup.UseVisualStyleBackColor = true;
@@ -119,11 +120,23 @@
             this.uxNameLabel.TabIndex = 40;
             this.uxNameLabel.Text = "Name:";
             // 
+            // uxRemoveButton
+            // 
+            this.uxRemoveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRemoveButton.Location = new System.Drawing.Point(186, 106);
+            this.uxRemoveButton.Name = "uxRemoveButton";
+            this.uxRemoveButton.Size = new System.Drawing.Size(150, 41);
+            this.uxRemoveButton.TabIndex = 48;
+            this.uxRemoveButton.Text = "Remove ";
+            this.uxRemoveButton.UseVisualStyleBackColor = true;
+            this.uxRemoveButton.Click += new System.EventHandler(this.UxRemoveButton_Click);
+            // 
             // UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 241);
+            this.Controls.Add(this.uxRemoveButton);
             this.Controls.Add(this.uxOpen);
             this.Controls.Add(this.uxRank);
             this.Controls.Add(this.uxRankLabel);
@@ -150,6 +163,7 @@
         private System.Windows.Forms.TextBox uxName;
         private System.Windows.Forms.Label uxNameLabel;
         private System.Windows.Forms.OpenFileDialog uxOpenDialog;
+        private System.Windows.Forms.Button uxRemoveButton;
     }
 }
 
